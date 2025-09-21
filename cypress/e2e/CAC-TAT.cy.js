@@ -185,7 +185,7 @@ describe('Central de Atendimento ao Cliente TAT', () => {
       .and('have.attr', 'target', '_blank')
   })
 
-  it.only('Acessar o link sem abrir em outra Aba, usando o INVOKE', () => {
+  it('Acessar o link sem abrir em outra Aba, usando o INVOKE', () => {
       cy.contains('a', 'Política de Privacidade')
         .invoke('removeAttr', 'target')
         .click()

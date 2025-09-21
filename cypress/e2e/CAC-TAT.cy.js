@@ -6,7 +6,7 @@ describe('Central de Atendimento ao Cliente TAT', () => {
     //cy.visit('https://duckduckgo.com')
   })
 
-  it('Preenche os campos corretamente e envia', () =>{
+  it.only('Preenche os campos corretamente e envia', () =>{
 
     const longText = Cypress._.repeat('Repetindo texto ', 10)
 
